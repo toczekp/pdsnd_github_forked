@@ -12,9 +12,13 @@ WEEK_DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
-    Returns:
+    
+    User Input Args:
         (str) city - name of the city to analyze
+        (str) month - name of the month to analyze. Use 'all' to indicate that all months should be considered.
+        (str) day - name of the week to analyze. Use 'all' to indicate that all days should be considered.
+    Returns:
+        (str) city - lower case name of the city to analyze 
         (int) month - integer representing the month to filter by, or -1 to apply no month filter
         (int) day - integer representing the week to filter by, or -1 to apply no day filter
     """
