@@ -160,10 +160,10 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # display total travel time
+    # display total travel time in hours
     tota_travel_time = df['Trip Duration'].sum() / 3600.0
     print('Total travel time for the specified city and time period is {:.2f} hours'.format(tota_travel_time))
-    # display mean travel time
+    # display mean travel time in minutes 
     mean_travel_time = df['Trip Duration'].mean() / 60.0
     print('Mean travel time for the specified city and time period is {:.2f} minutes'.format(mean_travel_time))
 
