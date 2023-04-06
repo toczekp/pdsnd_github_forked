@@ -247,7 +247,7 @@ def main():
             print('\nIt seems that we lack data on that particular date and city combo. \n')
             
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.lower() != 'yes' and restart.lower() != 'y':
             break
 
 
